@@ -56,7 +56,7 @@ export default function App() {
       </View>
       
       <View style={styles.feedContainer}>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
+        <View style={styles.postContainer}><Text > FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
         <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
         <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
         <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
@@ -143,14 +143,16 @@ const styles = StyleSheet.create({
     
   },
   feedContainer: {
-    flex: 1,
     backgroundColor: primeBackground,
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
+    //alignItems: 'center',
+    
   },
 
   postContainer:{
-    width: 300,
+    flexDirection: 'row',
+    flex: 1,
+    justifyContent: 'center',
+    //width: 100,
     padding: 10,
     borderWidth: 2,
     borderRadius: 20,
