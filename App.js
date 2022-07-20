@@ -56,7 +56,7 @@ export default function App() {
       </View>
       
       <View style={styles.feedContainer}>
-        <View style={styles.postContainer}><Text > FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
+        <View style={styles.postContainer}><Text > FEEDFEEDFEEDFEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
         <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
         <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
         <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
