@@ -4,11 +4,16 @@ import { Button } from 'react-native'
 import { useState } from 'react';
 import { ScrollView } from 'react-native';
 import { TouchableOpacity } from 'react-native';
+import { FAB } from 'react-native-paper';
+import { Image } from 'react-native';
+
 
 var secondBackground = '#003087';
 var primeTextColor = '#000000';
-var primeBackground = '#F5F7FA';
+var primeBackground = '#faf9d2';
 var secondTextColor = '#FFFFFF';
+var white = '#ffffff';
+const n = 8;
 
 /*TODO: 
 Friend add:
@@ -41,6 +46,7 @@ export default function App() {
       <View style={styles.containerTop}>
         <Text style={styles.textTop}>Settings</Text> 
       </View>
+      <View>
       <ScrollView>
       <View style={styles.ehreContainer}>
         <Text Text
@@ -56,41 +62,73 @@ export default function App() {
       </View>
       
       <View style={styles.feedContainer}>
-        <View style={styles.postContainer}><Text > FEEDFEEDFEEDFEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-        <View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View><View style={styles.postContainer}><Text> FEED </Text></View>
-      
-      
-        </View>
-      </ScrollView>
-      <View style={{
-        flexDirection: 'row',
-        justifyItems: 'space-between',
-        backgroundColor: primeBackground,
-        padding: 10
+        
 
-      }}>
-      <TouchableOpacity
-         style={styles.buttons}
-         onPress={incrementCounter}>
-         <Text style={{color:secondTextColor, fontSize: 25, justifyContent: 'center'}}> Get Ehre </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-         style={styles.buttons}
-         onPress={incrementCounter}>
-         <Text style={{color:secondTextColor, fontSize: 25, justifyContent: 'center'}}> Get Ehre </Text>
-      </TouchableOpacity>
-      </View>
-      <StatusBar style="auto" />
+        <View style = {{paddingBottom: 15,}}><View style={styles.postContainer}><Text > X hat Y 5 Ehre geschickt </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+        <View style = {{paddingBottom: 15}}><View style={styles.postContainer}><Text > FEED </Text></View></View>
+
+
+        
       
+        </View> 
+      </ScrollView>
+      </View>
+      
+      <View style={{ position: 'absolute', bottom: 10, zIndex: 200, alignContent: 'space-between', alignItems: 'stretch', flexDirection: 'row' }}>
+
+      <TouchableOpacity
+         style={styles.buttons}
+         onPress={incrementCounter}>
+         <Text style={{color:secondTextColor, fontSize: 25, justifyContent: 'center'}}> Get Ehre </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+         style={styles.buttons}
+         onPress={incrementCounter}>
+         <Text style={{color:secondTextColor, fontSize: 25, justifyContent: 'center'}}> Get Ehre </Text>
+      </TouchableOpacity>
+        
+        
+      </View>
+
+      
+
+
+      
+        
+    
+    
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      <StatusBar style="auto" />  
+        
     </View>
   );
 }
@@ -98,6 +136,35 @@ export default function App() {
 
 
 const styles = StyleSheet.create({
+
+  TouchableOpacityStyle:{
+
+    position: 'absolute',
+    width: 50,
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    right: 30,
+    bottom: 30,
+  },
+
+  FloatingButtonStyle: {
+
+    resizeMode: 'contain',
+    width: 50,
+    height: 50,
+  },
+
+  fab: {
+    position: 'absolute',
+    bottom: 5,
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    justifyContent: 'space-between'
+    
+  },
+
+  
   container: {
     flex: 1,
     backgroundColor: primeTextColor,
@@ -144,7 +211,11 @@ const styles = StyleSheet.create({
   },
   feedContainer: {
     backgroundColor: primeBackground,
+    paddingRight: 15,
+    paddingLeft: 15,
+    paddingTop: 10,
     //alignItems: 'center',
+
     
   },
 
@@ -153,11 +224,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     //width: 100,
-    padding: 10,
+    padding: 15,
     borderWidth: 2,
     borderRadius: 20,
     color:secondTextColor, 
-    fontSize: 25
+    fontSize: 25,
+    backgroundColor: white
   }
 
 });
