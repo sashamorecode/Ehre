@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const Colors = {
+const ColorsE = {
     secondBackground: '#003087',
     primeTextColor: '#000000',
     primeBackground: '#faf9d2',
@@ -10,7 +10,7 @@ export const Colors = {
 
 
 
-export const Styles = StyleSheet.create({
+const StylesE = StyleSheet.create({
 
     TouchableOpacityStyle:{
   
@@ -42,14 +42,14 @@ export const Styles = StyleSheet.create({
     
     container: {
       flex: 1,
-      backgroundColor: Colors.primeTextColor,
+      backgroundColor: ColorsE.primeTextColor,
       alignItems: 'stretch',
       justifyContent: 'center',
     },
     
     containerTop: {
   
-      backgroundColor: Colors.secondBackground,
+      backgroundColor: ColorsE.secondBackground,
       alignItems: 'stretch',
       justifyContent: 'center',
       paddingTop: 100,
@@ -59,18 +59,19 @@ export const Styles = StyleSheet.create({
       
     },
     textTop: {
-      color: Colors.secondTextColor,
+      color: ColorsE.secondTextColor,
       fontSize: 20,
     },
     buttons: {
-      margin: 10,
       borderRadius: 100,
-      justifyContent: 'center',
-      flex: 1,
+      //justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: Colors.secondBackground,
-      position: 'relative',
+      backgroundColor: ColorsE.secondBackground,
+      //position: 'relative',
       padding: 15,
+      transform: [{ scale: 0.8 }],
+      width: 150,
+      flex: 1
       
   
     },
@@ -78,7 +79,7 @@ export const Styles = StyleSheet.create({
     ehreContainer:{
       paddingTop: 20,
       flex: 1,
-      backgroundColor: primeBackground,
+      backgroundColor: ColorsE.primeBackground,
       alignItems: 'center',
       justifyContent: 'flex-start',
       flexDirection: 'column',
@@ -86,7 +87,7 @@ export const Styles = StyleSheet.create({
       
     },
     feedContainer: {
-      backgroundColor: primeBackground,
+      backgroundColor: ColorsE.primeBackground,
       paddingRight: 15,
       paddingLeft: 15,
       paddingTop: 10,
@@ -103,9 +104,17 @@ export const Styles = StyleSheet.create({
       padding: 15,
       borderWidth: 2,
       borderRadius: 20,
-      color:secondTextColor, 
+      color: ColorsE.secondTextColor, 
       fontSize: 25,
-      backgroundColor: white
+      backgroundColor: ColorsE.white,
+      
+    },
+    postBox:{
+      paddingBottom: 13
     }
   
   });
+
+
+export{StylesE};
+export{ColorsE};

@@ -7,8 +7,11 @@ import { TouchableOpacity } from 'react-native';
 import { FAB } from 'react-native-paper';
 import { Image } from 'react-native';
 import { Homepage } from './Screens/Home';
-import { Styles } from './Styles';
+import { AddFriendsScreen } from "./Screens/AddFriends"
 import { AppRegistry} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; 
+import { Header } from 'react-native/Libraries/NewAppScreen';
 
 
 
@@ -33,10 +36,21 @@ QR
 */
 
 export default function App() {
+
+  const Stack = createNativeStackNavigator();
   
   return (
-    <View><Homepage/></View>
+   
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+          
+        
+          <Stack.Screen name="Home" component={Homepage} />
+          <Stack.Screen name="AddFriendPage" component={AddFriendsScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
       
-  );
+  
 }
 
