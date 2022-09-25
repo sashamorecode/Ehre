@@ -1,16 +1,25 @@
 import { StyleSheet } from "react-native";
 
+
 const ColorsE = {
     secondBackground: '#003087',
     primeTextColor: '#000000',
     primeBackground: '#faf9d2',
     secondTextColor: '#FFFFFF',
-    white: '#ffffff'
+    white: '#ffffff',
+    black: '#000000'
 }
 
 
 
 const StylesE = StyleSheet.create({
+
+    simpleText:{
+      textAlign: 'center',
+      color: ColorsE.black,
+      fontSize: 24,
+      fontWeight: '500'
+    },
 
     TouchableOpacityStyle:{
   
@@ -79,7 +88,6 @@ const StylesE = StyleSheet.create({
     ehreContainer:{
       paddingTop: 20,
       flex: 1,
-      backgroundColor: ColorsE.primeBackground,
       alignItems: 'center',
       justifyContent: 'flex-start',
       flexDirection: 'column',
@@ -87,7 +95,6 @@ const StylesE = StyleSheet.create({
       
     },
     feedContainer: {
-      backgroundColor: ColorsE.primeBackground,
       paddingRight: 15,
       paddingLeft: 15,
       paddingTop: 10,
@@ -97,20 +104,29 @@ const StylesE = StyleSheet.create({
     },
   
     postContainer:{
-      flexDirection: 'row',
+      flexDirection: 'column',
       flex: 1,
       justifyContent: 'center',
       //width: 100,
-      padding: 15,
-      borderWidth: 2,
-      borderRadius: 20,
+      height: 60,
+      borderWidth: 2.2,
+      borderRadius: 12,
       color: ColorsE.secondTextColor, 
       fontSize: 25,
       backgroundColor: ColorsE.white,
       
     },
     postBox:{
-      paddingBottom: 13
+      paddingBottom: 8
+    },
+
+    backgroundHomeContainer:{
+      flex: 1
+    },
+
+    backgroundHome:{
+      flex: 1,
+      justifyContent: "center"
     }
   
   });
